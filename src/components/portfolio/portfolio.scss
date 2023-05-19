@@ -1,0 +1,29 @@
+@import '../../assets/scss_styles/global-imports';
+
+.portfolio {
+   min-height: 100vh;
+   @include flex-column;
+
+   .portfolioContent {
+      border-top: 2px solid $clr-white;
+      @include flex-center;
+      // border: 1px solid red;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding-top: 20px;
+      width: 100%;
+
+      &:hover .projectWrap {
+         filter: grayscale(.9);
+         opacity: .6;
+         transition: all 0.5s ease-in;
+      }
+
+      & .projectWrap:hover {
+         filter: grayscale(0);
+         opacity: 1;
+         transition: all 0.5s ease-in;
+
+      }
+   }
+}

@@ -1,0 +1,18 @@
+@import '../../assets/scss_styles/global-imports';
+
+.contacts {
+   @include flex-center;
+
+   .contactIcon {
+      opacity: .6;
+
+      &:hover {
+         opacity: 1;
+         background-color: rgba(255, 255, 255, 0.281);
+      }
+
+      // .contactIconImg {
+      //    filter: invert(99%) sepia(0%) saturate(708%) hue-rotate(80deg) brightness(115%) contrast(100%);
+      // }
+   }
+}

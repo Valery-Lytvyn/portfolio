@@ -1,0 +1,26 @@
+@import '../../assets/scss_styles/global-imports';
+
+.about {
+   @include flex-column;
+
+   .aboutContent {
+      padding: 1rem 0;
+      font-family: $f_Lato;
+      letter-spacing: 2px;
+      font-weight: 200;
+      @include flex-center-vert;
+      align-items: stretch;
+
+
+      @include _576 {
+         flex-direction: column-reverse;
+      }
+
+
+
+      .aboutText {
+         flex: 1;
+         padding: 15px 0;
+      }
+   }
+}

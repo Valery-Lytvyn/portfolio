@@ -1,0 +1,36 @@
+@import '../../../assets/scss_styles/global-imports';
+
+.heroTitle {
+   padding: 1rem;
+   flex: 1;
+   @include flex-column;
+   justify-content: center;
+   color: $clr-light-gray;
+   width: 100%;
+   height: 100%;
+
+
+   .heroTitleName {
+      padding: 1rem 0;
+   }
+
+   .profession {
+      margin-left: 50px;
+      padding: 20px 0 5px;
+      width: fit-content;
+
+      @include _768 {
+         margin-left: 50px;
+      }
+
+      @include _450 {
+         margin-left: 10px;
+      }
+
+      @include _350 {
+         font-size: 1.4rem;
+      }
+
+   }
+
+}

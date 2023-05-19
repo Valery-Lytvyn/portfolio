@@ -1,0 +1,95 @@
+@import './assets/scss_styles/global-imports';
+
+.App {
+   overflow-x: hidden;
+   font-family: $f_Roboto;
+   line-height: normal;
+   color: $clr-white;
+   background: rgb(44, 44, 44);
+   background: radial-gradient(circle, rgb(44, 44, 44) 0%, rgb(17, 17, 17) 100%);
+
+   .iconBtn {
+      width: 2rem;
+      height: 2rem;
+      padding: .4rem;
+      margin: 0 .4rem;
+      border-radius: 7px;
+
+      .iconBtnImg {
+         filter: invert(99%) sepia(0%) saturate(708%) hue-rotate(80deg) brightness(115%) contrast(100%);
+      }
+   }
+
+
+   .container {
+      min-height: 100%;
+      max-width: 1320px;
+      // width: 100%;
+      width: calc(100% - 10rem);
+      margin: 0px auto;
+      display: flex;
+      justify-content: inherit;
+      align-items: inherit;
+      flex-direction: inherit;
+      gap: inherit;
+      // border: 1px solid rgb(10, 218, 62);
+
+      @include _768 {
+         width: calc(100% - 5rem);
+      }
+
+
+
+
+      h1 {
+         font-size: 4.375rem;
+         line-height: 4.3rem;
+
+         @include _768 {
+            font-size: 3.5rem;
+            line-height: 4.0rem;
+         }
+
+         @include _576 {
+            font-size: 2.5rem;
+            line-height: 3.5rem;
+         }
+
+         @include _450 {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+         }
+      }
+
+      h2 {
+         font-size: 3.5rem;
+         line-height: 4.5rem;
+
+         @include _768 {
+            font-size: 2.5rem;
+            line-height: 3.5rem;
+         }
+
+         @include _576 {
+            font-size: 2.2rem;
+            line-height: 2.6rem;
+         }
+
+         // @include _576 {
+         //    font-size: 1.3rem;
+         //    line-height: 1.3rem;
+         // }
+      }
+   }
+
+   .modalRear {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 50;
+      margin: 0;
+      background-color: transparent;
+   }
+}

@@ -1,0 +1,19 @@
+@import '../../assets/scss_styles/global-imports';
+
+.projectWrap {
+   border-radius: 15px;
+   width: 560px;
+   height: 430px;
+   overflow: hidden;
+
+   @include _576 {
+      width: 320px;
+      height: 250px;
+   }
+
+   .project {
+      border-radius: 10px;
+      height: 100%;
+      position: relative;
+   }
+}

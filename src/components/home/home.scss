@@ -1,0 +1,34 @@
+@import '../../assets/scss_styles/global-imports';
+
+.home {
+   min-height: 800px;
+   padding-top: 5rem;
+   @include flex-center-vert;
+   align-items: stretch;
+
+
+   @include _576 {
+      .container {
+         flex-direction: column;
+      }
+   }
+
+
+   .heroImg {
+      // border: 1px solid rgb(27, 219, 59);
+      flex: 1;
+      @include flex-center;
+      // border-bottom: 1px solid $clr-white;
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+
+      img {
+         object-fit: cover;
+         // border: 1px solid rgb(27, 219, 59);
+
+
+
+      }
+
+   }
+}

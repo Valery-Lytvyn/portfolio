@@ -1,0 +1,12 @@
+@import '../../assets//scss_styles/global-imports';
+
+.navBar {
+   @include flex-center;
+   justify-content: space-between;
+
+   @include _768 {
+      .navMenu {
+         display: none;
+      }
+   }
+}
