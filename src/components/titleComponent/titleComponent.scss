@@ -1,0 +1,48 @@
+@import '../../assets/scss_styles/global-imports';
+
+.titleWrap {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding: 10px 0;
+   flex-direction: column;
+
+   @include _768 {
+      flex-direction: column;
+   }
+
+   .title {
+      flex: 3;
+      @include title_style;
+   }
+
+   & .motion:nth-child(2) {
+      align-self: flex-end;
+      flex: 1;
+      max-width: 760px;
+
+      @include _992 {
+         max-width: 520px;
+      }
+
+      @include _768 {
+         max-width: 420px;
+      }
+
+      @include _450 {
+         max-width: 280px;
+      }
+   }
+
+   .subTitle {
+      font-size: 1.25;
+      font-weight: 100;
+      margin-bottom: 0;
+      font-style: italic;
+      text-align: end;
+      padding: 10px 0;
+      color: $clr-light-gray;
+   }
+}

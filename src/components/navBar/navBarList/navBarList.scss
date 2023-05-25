@@ -7,7 +7,6 @@
 
    @include _768 {
       position: fixed;
-      // padding-top: 2rem;
       padding: 2rem .5rem;
       flex-direction: column;
       justify-content: flex-start;
@@ -16,7 +15,5 @@
       height: fit-content;
       border-radius: 10px;
       background: rgba(34, 34, 34, 0.808);
-      // backdrop-filter: blur(12px)saturate(120%) contrast(200%);
-
    }
 }

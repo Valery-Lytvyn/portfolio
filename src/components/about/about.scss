@@ -2,25 +2,27 @@
 
 .about {
    @include flex-column;
+   justify-content: space-around;
 
    .aboutContent {
-      padding: 1rem 0;
-      font-family: $f_Lato;
+      padding: .5rem 0;
+      @include flex-column;
       letter-spacing: 2px;
-      font-weight: 200;
-      @include flex-center-vert;
-      align-items: stretch;
-
-
-      @include _576 {
-         flex-direction: column-reverse;
-      }
-
-
+      font-weight: 100;
+      line-height: 1.7rem;
 
       .aboutText {
-         flex: 1;
          padding: 15px 0;
+         text-indent: 1.5em;
+
+         & .paragraph {
+            padding: 5px 0;
+         }
+
+         @include _576 {
+            font-size: .8rem;
+            line-height: 1.2rem;
+         }
       }
    }
 }

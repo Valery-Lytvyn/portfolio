@@ -2,11 +2,15 @@
 
 .alertMessage {
    @include absolute-center;
-   // right: 25px;
    padding: 15px;
    border-radius: 10px;
    font-size: 1rem;
    background: rgb(44, 44, 44);
    width: 90%;
+   max-width: 440px;
    text-align: center;
+
+   @include _768 {
+      max-width: 280px;
+   }
 }

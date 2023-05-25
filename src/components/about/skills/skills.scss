@@ -1,7 +1,12 @@
 @import '../../../assets/scss_styles/global-imports';
 
 .skills {
-   flex: 1;
-   display: flex;
+   @include flex-center-vert;
+   justify-content: space-between;
    flex-wrap: wrap;
+   gap: 1rem;
+
+   @include _576 {
+      justify-content: center;
+   }
 }

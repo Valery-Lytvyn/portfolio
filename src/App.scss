@@ -1,7 +1,6 @@
 @import './assets/scss_styles/global-imports';
 
 .App {
-   overflow-x: hidden;
    font-family: $f_Roboto;
    line-height: normal;
    color: $clr-white;
@@ -20,6 +19,9 @@
       }
    }
 
+   section {
+      min-height: 100vh;
+   }
 
    .container {
       min-height: 100%;
@@ -39,46 +41,34 @@
       }
 
 
-
-
       h1 {
-         font-size: 4.375rem;
-         line-height: 4.3rem;
+         font-size: 3.7rem;
+         // line-height: 4.3rem;
 
          @include _768 {
-            font-size: 3.5rem;
-            line-height: 4.0rem;
+            font-size: 3.6rem;
+            // line-height: 4.0rem;
          }
 
          @include _576 {
-            font-size: 2.5rem;
-            line-height: 3.5rem;
-         }
-
-         @include _450 {
-            font-size: 1.8rem;
-            line-height: 2.8rem;
+            font-size: 2rem;
+            // line-height: 2.2rem;
          }
       }
 
       h2 {
-         font-size: 3.5rem;
-         line-height: 4.5rem;
+         font-size: 3.0rem;
+         // line-height: 3.5rem;
 
          @include _768 {
-            font-size: 2.5rem;
-            line-height: 3.5rem;
+            font-size: 2.3rem;
+            // line-height: 2.7rem;
          }
 
          @include _576 {
-            font-size: 2.2rem;
-            line-height: 2.6rem;
+            font-size: 1.7rem;
+            // line-height: 1.8rem;
          }
-
-         // @include _576 {
-         //    font-size: 1.3rem;
-         //    line-height: 1.3rem;
-         // }
       }
    }
 

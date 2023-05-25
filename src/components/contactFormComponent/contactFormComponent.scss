@@ -1,0 +1,42 @@
+@import '../../assets/scss_styles/global-imports';
+
+.formChapter {
+   position: relative;
+   flex: 1;
+   @include flex-center;
+
+   .contactForm {
+      @include flex-center-column;
+      gap: 1rem;
+      width: 460px;
+
+      @include _768 {
+         width: 300px;
+      }
+
+      .sendButton,
+      input,
+      textarea {
+         width: 100%;
+         font-size: 1.1rem;
+         font-weight: 200;
+         letter-spacing: 1px;
+         padding: 10px;
+         background: transparent;
+         color: $clr-white;
+         border: 1px solid $clr-white;
+      }
+
+      .sendButton {
+         color: $clr-white;
+         padding: 10px 0;
+         border-radius: 10px;
+
+         // margin: 0 auto;
+         // text-align: center;
+         &:hover {
+            background-color: rgba(105, 105, 105, 0.151);
+         }
+      }
+   }
+}
