@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   leftHorizontalVariant,
   rightHorizontalVariant,
@@ -22,9 +22,11 @@ function Project({ project, color }: ProjectProps) {
   const { id, picture, smallPicture, label, projectName, icons } = project;
   const movementDirection = id % 2 === 0 ? "right" : "left";
 
-  if ("ontouchstart" in document.documentElement) {
-    setIsTouchscreen(true);
-  }
+  useEffect(() => {
+    if ("ontouchstart" in document.documentElement) {
+      setIsTouchscreen(true);
+    }
+  }, []);
 
   const isMobileDevice = useMediaQuery({
     query: "(min-device-width: 576px)",

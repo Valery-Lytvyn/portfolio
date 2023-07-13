@@ -1,13 +1,13 @@
-@mixin size_element($h: 100%, $w: 100%) {
-   height: $h;
-   width: $w;
-}
+// @mixin size_element($h: 100%, $w: 100%) {
+//    height: $h;
+//    width: $w;
+// }
 
-@mixin border($thick: 1px, $color: #000, $border_style: solid) {
-   border-width: $thick;
-   border-color: $color;
-   border-style: $border_style;
-}
+// @mixin border($thick: 1px, $color: #000, $border_style: solid) {
+//    border-width: $thick;
+//    border-color: $color;
+//    border-style: $border_style;
+// }
 
 @mixin title_style() {
    color: $clr-white;

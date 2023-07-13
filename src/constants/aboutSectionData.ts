@@ -24,4 +24,5 @@ export const skills: Array<string> = [
   "BOOTSTRAP",
   "REDUX",
   "REACT",
+  "TYPESCRIPT",
 ];
